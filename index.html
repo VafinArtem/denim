@@ -10,40 +10,38 @@
 
 <body>
 
-  <header class="header">
+  <header class="header container">
     <h1 class="visually-hidden">Интернет-магазин Nimes</h1>
-    <div class="header-nav container">
-      <nav class="main-navigation">
-        <ul class="main-nav-items">
-          <li class="main-nav-item">Woman</li>
-          <li class="main-nav-item">Man</li>
-          <li class="main-nav-item">New</li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <a href="#">
-          <img src="" alt="Nimes">
-        </a>
-      </div>
-      <div class="personel-menu">
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <label for="search">Поиск</label>
-          <input type="text" id="search">
-        </form>
-        <a href="blank.html">Корзина</a>
-      </div>
+    <nav class="main-navigation">
+      <ul class="main-nav-items">
+        <li class="main-nav-item">Woman</li>
+        <li class="main-nav-item">Man</li>
+        <li class="main-nav-item">New</li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="#">
+        <img src="img/logo.svg" width="75px" height="17px" alt="Nimes">
+      </a>
     </div>
+    <div class="personel-menu">
+      <a class="search" href="blank.html" title="Поиск"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 19l-4.35-4.35M17 9A8 8 0 111 9a8 8 0 0116 0z" stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="cart" href="blank.html" title="Корзина"><svg width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h3.636l2.437 11.477c.083.395.31.75.643 1.002a1.89 1.89 0 001.175.378h8.836c.427.008.843-.126 1.175-.378a1.7 1.7 0 00.643-1.002L21 5.286H5.545m3.637 12.857c0 .473-.407.857-.91.857-.501 0-.908-.384-.908-.857 0-.474.407-.857.909-.857s.909.383.909.857zm10 0c0 .473-.407.857-.91.857-.501 0-.908-.384-.908-.857 0-.474.407-.857.909-.857s.909.383.909.857z" stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+
   </header>
 
   <main class="main">
     <section class="promo">
-      <div class="promo-text-wrapper">
-        <p class="promo-slogan">The quality you deserve</p>
-        <h2 class="promo-title">DENIM</h2>
-        <a href="blank.html" class="promo-btn">Check new collection</a>
-      </div>
-      <div class="promo-pict">
-        <img src="" width="430px" height="517.33px" alt="Фото девушки в одежде марки Denim">
+      <div class="container">
+        <div class="promo-text-wrapper">
+          <p class="promo-slogan">The quality you deserve</p>
+          <h2 class="promo-title">DENIM</h2>
+          <a href="blank.html" class="promo-btn">Check new collection</a>
+        </div>
+        <div class="promo-pict">
+          <img src="" width="430px" height="517.33px" alt="Фото девушки в одежде марки Denim">
+        </div>
       </div>
     </section>
     <section class="bestsellers">
