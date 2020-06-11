@@ -123,3 +123,60 @@ img {
     min-height: 617px;
     background-color: var(--basic-gray-light);
 }
+
+.promo-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.promo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 355px;
+    padding-left: 25px;
+    padding-top: 63px;
+}
+
+.promo-slogan {
+    color: var(--basic-gray);
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    margin-top: auto;
+    padding-left: 3px;
+    padding-bottom: 4px;
+}
+
+.promo-title {
+    font-family: "Anton", "Tahoma", sans-serif;
+    font-size: 124px;
+    line-height: 100px;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: 19px;
+}
+
+.promo-pict {
+    width: 530px;
+    padding-left: 73px;
+    padding-top: 50px;
+}
+
+.button {
+    display: block;
+    min-height: 64px;
+    background-color: var(--basic-black);
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 25px;
+}
+
+.promo-btn {
+    width: 219px;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 50px;
+}
