@@ -158,9 +158,35 @@ img {
 }
 
 .promo-pict {
+    position: relative;
     width: 530px;
     padding-left: 73px;
     padding-top: 50px;
+    z-index: 10;
+}
+
+.promo-pict::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 23px;
+    background-image: url(../img/bg2.svg);
+    width: 232px;
+    height: 176px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.promo-pict::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    right: -23px;
+    background-image: url(../img/bg1.svg);
+    width: 232px;
+    height: 176px;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .button {
