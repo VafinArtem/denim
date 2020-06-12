@@ -437,3 +437,100 @@ img {
     background-image: url(../img/twitter.svg);
     background-repeat: no-repeat;
 }
+
+
+/* Catalog -- Nav */
+
+.catalog-nav-wrapper {
+    display: flex;
+}
+
+.catalog-title-wrapper {
+    width: 370px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 39px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.breadcrumbs-item {
+    position: relative;
+}
+
+.breadcrumbs-item:not(:last-child) {
+    margin-right: 29px;
+}
+
+.breadcrumbs-item a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--basic-gray);
+}
+
+.breadcrumbs-item .bread-current {
+    color: var(--basic-black);
+    pointer-events: none;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--basic-gray);
+    right: -20px;
+}
+
+.catalog-title {
+    margin: 0;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.catalog-pict {
+    min-width: 360px;
+    margin-right: auto;
+    position: relative;
+    align-content: center;
+}
+
+.catalog-pict img {
+    margin-left: -8px;
+}
+
+.catalog-pict::before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: -38px;
+    background-image: url(../img/bg2.svg);
+    width: 178px;
+    height: 135px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.catalog-pict::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 39px;
+    background-image: url(../img/bg2.svg);
+    width: 232px;
+    height: 176px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
