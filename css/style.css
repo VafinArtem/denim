@@ -609,3 +609,21 @@ img {
 
 
 /* Item */
+
+.card-product {
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
