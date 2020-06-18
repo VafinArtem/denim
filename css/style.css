@@ -6,6 +6,7 @@
     --basic-gray: #727A82;
     --basic-gray-light: #F1F2F4;
     --basic-gray-extra-light: #E5E5E5;
+    --special-gray: #B0C3C7;
 }
 
 
@@ -648,11 +649,10 @@ img {
     padding-top: 60px;
 }
 
-.card-desc ul {
+.color-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 .card-title,
@@ -683,8 +683,16 @@ img {
     margin-bottom: 25px;
 }
 
+.color-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .color-items,
 .size-items {
+    border: none;
+    margin: 0;
+    padding: 0;
     margin-bottom: 40px;
 }
 
@@ -698,4 +706,48 @@ img {
     border: none;
     width: 200px;
     padding: 0;
+}
+
+.check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check-box {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/gray-normal.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.check-input:checked+.check-box {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/gray-check.svg);
+    background-repeat: no-repeat;
+}
+
+.check-box.blue {
+    background-image: url(../img/blue-normal.svg);
+}
+
+.check-input:checked+.check-box.blue {
+    background-image: url(../img/blue-check.svg);
+}
+
+.check-box.dark-gray {
+    background-image: url(../img/dark-gray-normal.svg);
+}
+
+.check-input:checked+.check-box.dark-gray {
+    background-image: url(../img/dark-gray-check.svg);
+}
+
+.color-item:not(:last-child) {
+    margin-right: 22px;
 }

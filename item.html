@@ -55,26 +55,47 @@
       <div class="card-desc">
         <h2 class="card-title">Overalls</h2>
         <p class="description-text">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
-        <div class="color-items">
-          <h3 class="card-subtitle">Color</h3>
-          <ul>
-            <li class="color-item">gray</li>
-            <li class="color-item">blue</li>
-            <li class="color-item">dark gray</li>
-          </ul>
-        </div>
-        <div class="size-items">
-          <h3 class="card-subtitle">Size</h3>
-          <ul>
-            <li class="size-item">XS</li>
-            <li class="size-item">S</li>
-            <li class="size-item">M</li>
-            <li class="size-item">L</li>
-            <li class="size-item">XL</li>
-          </ul>
-        </div>
-        <p class="cost">$160</p>
-        <button class="button card-btn">Add to cart</button>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+
+          <fieldset class="color-items">
+            <legend class="card-subtitle">Color</legend>
+            <ul class="color-list">
+              <li class="color-item">
+                <label class="check" aria-label="gray">
+                  <input class="check-input" type="checkbox" name="gray">
+                  <span class="check-box"></span>
+                </label>
+              </li>
+              <li class="color-item">
+                <label class="check" aria-label="blue">
+                  <input class="check-input" type="checkbox" name="blue">
+                  <span class="check-box blue"></span>
+                </label>
+              </li>
+              <li class="color-item">
+                <label class="check" aria-label="dark-gray">
+                  <input class="check-input" type="checkbox" name="dark-gray">
+                  <span class="check-box dark-gray"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="size-items">
+            <legend class="card-subtitle">Size</legend>
+            <ul>
+              <li class="size-item">XS</li>
+              <li class="size-item">S</li>
+              <li class="size-item">M</li>
+              <li class="size-item">L</li>
+              <li class="size-item">XL</li>
+            </ul>
+          </fieldset>
+          <p class="cost">$160</p>
+          <button class="button card-btn">Add to cart</button>
+        </form>
+
+
+
       </div>
       </div>
     </section>
