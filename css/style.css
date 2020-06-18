@@ -617,6 +617,9 @@ img {
     margin-top: 55px;
 }
 
+
+/* Item -- Slider */
+
 .slider {
     display: flex;
     justify-content: center;
@@ -642,6 +645,9 @@ img {
     margin-right: 20px;
 }
 
+
+/* Item -- Card Description Form order */
+
 .card-desc {
     background-color: var(--basic-gray-light);
     width: 570px;
@@ -649,7 +655,8 @@ img {
     padding-top: 60px;
 }
 
-.color-list {
+.color-list,
+.size-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -680,26 +687,36 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
-.color-list {
+.color-list,
+.size-list {
     display: flex;
     justify-content: flex-start;
 }
 
-.color-items,
+.color-items {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
 .size-items {
     border: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
 }
 
 .card-desc .cost {
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .card-btn {
@@ -707,6 +724,14 @@ img {
     width: 200px;
     padding: 0;
 }
+
+.color-item:not(:last-child),
+.size-item:not(:last-child) {
+    margin-right: 21px;
+}
+
+
+/* Item -- Card Description Form order -- Checkbox*/
 
 .check-input {
     position: absolute;
@@ -748,6 +773,14 @@ img {
     background-image: url(../img/dark-gray-check.svg);
 }
 
-.color-item:not(:last-child) {
-    margin-right: 22px;
+.check-box-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--basic-gray);
+    cursor: pointer;
+}
+
+.check-input:checked+.check-box-text {
+    color: var(--basic-black);
 }
