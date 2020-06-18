@@ -83,6 +83,10 @@ img {
     margin-right: 35px;
 }
 
+.main-nav-item a {
+    color: var(--basic-black);
+}
+
 .logo {
     margin: auto;
 }
@@ -533,4 +537,37 @@ img {
     height: 176px;
     background-repeat: no-repeat;
     z-index: -1;
+}
+
+
+/* Catalog -- Filter & List */
+
+.filter-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.filter-catalog {
+    width: 243px;
+    height: 50px;
+    border: 2px solid var(--basic-black);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 18px;
+}
+
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-list .catalog-item {
+    margin-bottom: 66px;
 }
