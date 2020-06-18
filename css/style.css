@@ -5,6 +5,7 @@
     --basic-white: #FFFFFF;
     --basic-gray: #727A82;
     --basic-gray-light: #F1F2F4;
+    --basic-gray-extra-light: #E5E5E5;
 }
 
 
@@ -571,3 +572,40 @@ img {
 .catalog-list .catalog-item {
     margin-bottom: 66px;
 }
+
+
+/* Catalog -- Pagination */
+
+.pagination-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.pagination-wrapper p {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.scale {
+    width: 199px;
+    height: 2px;
+    background-color: var(--basic-gray-extra-light);
+}
+
+.bar {
+    width: 20%;
+    height: 2px;
+    background: var(--basic-black);
+}
+
+.paggination-btn {
+    text-align: center;
+    margin-top: 40px;
+    width: 200px;
+}
+
+
+/* Item */
