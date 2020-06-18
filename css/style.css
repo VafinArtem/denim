@@ -272,6 +272,11 @@ img {
     margin: 0;
 }
 
+.catalog-item a,
+.category-item a {
+    color: var(--basic-black);
+}
+
 .item-name {
     font-weight: 500;
     font-size: 18px;
