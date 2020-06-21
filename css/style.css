@@ -29,8 +29,8 @@ body {
     font-family: "Work Sans", "Tahoma", sans-serif;
     color: var(--basic-black);
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
 }
 
 a {
